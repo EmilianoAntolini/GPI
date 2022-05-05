@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="10.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4903f3bc-b1ec-4793-a465-e8474a187ab5}</ProjectGuid>
+    <AssemblyName>GPI OPC UA</AssemblyName>
+    <Name>GPI OPC UA</Name>
+    <RootNamespace>GPI OPC UA</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="OPCUAServer GPI.tcopcuasrv">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <tcopcuasrvdaCompile Include="OPCUAServer GPI\Data Access\Data Access.opcuada">
+      <DependentUpon>OPCUAServer GPI.tcopcuasrv</DependentUpon>
+    </tcopcuasrvdaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <tcopcuasrvalarmcCompile Include="OPCUAServer GPI\Alarms and Conditions\Alarms and Conditions.ac">
+      <DependentUpon>OPCUAServer GPI.tcopcuasrv</DependentUpon>
+    </tcopcuasrvalarmcCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <tcopcuasrvresCompile Include="OPCUAServer GPI\Resources\Resources.res">
+      <DependentUpon>OPCUAServer GPI.tcopcuasrv</DependentUpon>
+    </tcopcuasrvresCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <tcopcuasrvhaCompile Include="OPCUAServer GPI\Historical Access\Historical Access.opcuaha">
+      <DependentUpon>OPCUAServer GPI.tcopcuasrv</DependentUpon>
+    </tcopcuasrvhaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <tcopcuasrvsecCompile Include="OPCUAServer GPI\Security Access\Security Access.sec">
+      <DependentUpon>OPCUAServer GPI.tcopcuasrv</DependentUpon>
+    </tcopcuasrvsecCompile>
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+      <TcConnectivity />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+</Project>

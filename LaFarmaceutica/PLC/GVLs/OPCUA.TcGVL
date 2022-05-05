@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <GVL Name="OPCUA" Id="{9c2e3882-cb73-4b35-be5d-698cfb1ee663}">
+    <Declaration><![CDATA[
+VAR_GLOBAL
+	{attribute 'OPC.UA.DA' := '1'}	
+	aOBN1		: ARRAY[0..20] OF stOB;		(* Array buffer su nastro 1 *)
+	{attribute 'OPC.UA.DA' := '1'}
+	aOBN2		: ARRAY[0..20] OF stOB;		(* Array buffer su nastro 2 *)
+	{attribute 'OPC.UA.DA' := '1'}	
+	aOBN3		: ARRAY[0..20] OF stOB;		(* Array buffer su nastro 3 *)
+	{attribute 'OPC.UA.DA' := '1'}	
+	aNastri_L1	: ARRAY[0..5] OF stBelt;	(* Array nastri linea 1 *)
+	{attribute 'OPC.UA.DA' := '1'}	
+	aNastri_L2	: ARRAY[0..5] OF stBelt;	(* Array nastri linea 2) *)
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro1Linea1	: stCmd;	(* Comandi per nastro 1 Linea 1 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro2Linea1	: stCmd;	(* Comandi per nastro 2 Linea 1 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro3Linea1	: stCmd;	(* Comandi per nastro 3 Linea 1 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro4Linea1	: stCmd;	(* Comandi per nastro 4 Linea 1 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro1Linea2	: stCmd;	(* Comandi per nastro 1 Linea 2 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro2Linea2	: stCmd;	(* Comandi per nastro 2 Linea 2 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro3Linea2	: stCmd;	(* Comandi per nastro 3 Linea 2 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdNastro4Linea2	: stCmd;	(* Comandi per nastro 4 Linea 2 *) 
+	{attribute 'OPC.UA.DA' := '1'}	
+	CmdObFinale			: StCmd;	(* Comandi per OB fine linea *)
+
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

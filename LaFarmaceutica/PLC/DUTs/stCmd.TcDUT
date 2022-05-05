@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.11">
+  <DUT Name="stCmd" Id="{cf3ea72b-51fb-47db-a51b-41f1bee5ea84}">
+    <Declaration><![CDATA[{attribute 'OPC.UA.DA.StructuredType' := '1'}
+TYPE stCmd :
+STRUCT
+	iCmd	: INT;	(* Codice comando *)
+	iPar1	: INT;	(* Parametro 1 *)
+	iPar2	: INT;	(* Parametro 2 *)
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
